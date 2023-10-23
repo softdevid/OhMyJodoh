@@ -1,9 +1,12 @@
 import HomeLayout from "@/Layouts/HomeLayout";
+import { Head } from "@inertiajs/react";
 import React from "react";
 
 const Home = () => {
+  let title = "Selamat Datang | OhMyJodoh";
   return (
     <>
+      <Head title={title} />
       <div className="h-screen flex flex-col justify-center items-center">
         <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           We invest in the world’s potential
@@ -13,7 +16,7 @@ const Home = () => {
           capital can unlock long-term value and drive economic growth.
         </p>
         <a
-          href="#"
+          href="/daftar"
           class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:ring-purple-300"
         >
           Daftar
